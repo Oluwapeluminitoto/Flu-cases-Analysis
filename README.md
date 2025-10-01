@@ -1,12 +1,14 @@
 Flu Season and Financial Forecasting Project
 
  **Overview**
+ 
 This project focuses on a critical business intelligence initiative for a Rwandan clinic's financial planning department.
 The goal was to provide a data-driven view of how the annual flu season impacts the clinic's finances to support accurate budget forecasting.
 
 The core task was to analyze time-series data to identify the peak months of flu activity and the corresponding total treatment costs.
 
  **Dataset Schema**
+ 
 The analysis utilized four distinct relational tables from the clinic's operational database:
 
 Table Name - Key Columns - Description
@@ -16,9 +18,11 @@ Wellness_activity -	patientid, activity type - Records of patient wellness activ
 Patient_records_fact - patientid, visit date, cost, diagnosis, doctor ID - The central fact table containing visit details, costs, and diagnoses.
 
  **Primary Analytical Task**
+ 
 Title: Analyzing Monthly Trends of Flu Cases and Treatment Costs
 
 Objectives:
+
 Filtering: Isolate records where the diagnosis column equals 'Flu'.
 
 Aggregation: Group the filtered data by Year and Month.
@@ -28,6 +32,7 @@ Calculation: Summarize the total case count and the total cost for each month.
 Insight: Determine the months representing the absolute peak of the flu season in terms of both case volume and financial expenditure.
 
 💻 SQL Implementation
+
 The analysis was performed by grouping records from the Patient_records_fact table and utilizing date manipulation functions.
 
 Query for Monthly Aggregation
